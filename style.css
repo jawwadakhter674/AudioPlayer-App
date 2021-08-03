@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::after,::before{
+
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.2);
+    width: 350px;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+   
+}
+.header h1,h3{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+}
+.header h3{
+   color: #cacaca;
+   margin-bottom: 30px;
+}
+
+.images{
+    margin:auto;
+    /* background-color: aqua; */
+    height: 250px;
+    width: 250px;
+
+    /* border-radius: 50%; */
+    
+}
+.images img{
+    height: 100%;
+    width: 100%;
+    /* margin-top: 30px; */
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.2);
+    /* margin-bottom: 30px; */
+    border-radius: 50%;
+}
+
+.controls{
+    width: 15rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 30px !important; */
+}
+
+.controls .fa{
+    margin-top: 30px;
+color: #111;
+filter: drop-shadow( 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.2));
+font-size: 20px;
+cursor: pointer;
+
+}
+.controls .fa:hover{
+    color: gray;
+}
+
+
+#play{
+    color: white;
+    background-color: black;
+    height: 50px;
+    font-size:1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: -1px; */
+    border-radius:50%;
+
+    width: 50px;
+}
+
+#play:hover{
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,0.4);
+    background-color: #ffff;
+    color: #111;
+}
+
+
+.anime{
+    animation: rotatePlayer 3s linear infinite;
+}
+
+
+
+
+@keyframes rotatePlayer{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
